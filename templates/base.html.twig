@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
+        {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="{{asset('assets/css/vendor/bootstrap.min.css')}}">
+        <link rel="stylesheet" href="{{asset('assets/css/plugins/fontawesome-5.css')}}">
+        <link rel="stylesheet" href="{{asset('assets/css/plugins/swiper.css')}}">
+        <link rel="stylesheet" href="{{asset('assets/css/plugins/aos.css')}}">
+        <link rel="stylesheet" href="{{asset('assets/css/plugins/unicons.css')}}">
+        <link rel="stylesheet" href="{{asset('assets/css/plugins/metismenu.css')}}">
+        <link rel="stylesheet" href="{{asset('assets/css/plugins/hover-revel.css')}}">
+        <link rel="stylesheet" href="{{asset('assets/css/plugins/timepickers.min.css')}}">
+        
+        <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/fav.png">
+
+        <!-- Feuille de style commun à toute les pages -->
+        <link rel="stylesheet" href="{{asset('assets/css/bootstrap.min.css')}}">
+        <link rel="stylesheet" href="{{asset('assets/css/style.css')}}">
+        {% block stylesheets %}
+            
+        {% endblock %}
+        <!-- Fichiers js -->
+        <script src="{{asset('assets/js/bootstrap.bundle.min.js')}}" defer></script>
+        <script src="{{asset('assets/js/main.js')}}" defer></script>
+        {% block javascripts %}
+           
+        {% endblock %}
+    </head>
+    <body>
+        {% block body %}{% endblock %}
+    </body>
+</html>
